@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background-color: #555;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .container {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .box {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border: 1px solid #ddd;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #0077cc;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple website created with HTML, CSS, and JavaScript.</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="box">
+      <h2>About This Site</h2>
+      <p>This website is an example of a basic webpage.</p>
+      <button onclick="changeMessage()">Click Me</button>
+      <p id="message">Hello!</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 My Website</p>
+  </footer>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").innerText = "You clicked the button!";
+    }
+  </script>
+</body>
+</html>
