@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development in the AI Era</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f8fafc;
+      color: #1f2937;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #2563eb);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+      font-size: 1.1rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #facc15;
+      color: #111827;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .cta-button:hover {
+      background: #eab308;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #0f172a;
+    }
+
+    p.section-intro {
+      margin-bottom: 25px;
+      color: #4b5563;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #1d4ed8;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .agenda-item {
+      background: white;
+      border-left: 5px solid #2563eb;
+      padding: 16px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    }
+
+    .details-box {
+      margin-top: 20px;
+      padding: 18px;
+      background: #e0f2fe;
+      border: 1px solid #7dd3fc;
+      border-radius: 10px;
+      display: none;
+    }
+
+    .button-row {
+      margin-top: 20px;
+    }
+
+    .secondary-button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .secondary-button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web Development in the AI Era</h1>
+    <p>
+      A one-day seminar for non-technical creators to learn how websites work,
+      how AI can support the development process, and why understanding still matters.
+    </p>
+    <a href="#register" class="cta-button">Register for the Seminar</a>
+  </header>
+
+  <section>
+    <h2>About the Seminar</h2>
+    <p class="section-intro">
+      This seminar introduces participants to HTML, CSS, basic JavaScript,
+      and focused AI use inside the development process. Students begin by asking AI
+      to create a website with little direction, then improve that result by learning
+      how structure, design, purpose, and prompt clarity shape better outcomes.
+    </p>
+  </section>
+
+  <section>
+    <h2>What Participants Will Learn</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Web Foundations</h3>
+        <p>Understand the role of HTML, CSS, and JavaScript in building modern websites.</p>
+      </div>
+      <div class="card">
+        <h3>AI Prompting</h3>
+        <p>Learn how more detailed prompts produce more useful, accurate, and relevant output.</p>
+      </div>
+      <div class="card">
+        <h3>Critical Thinking</h3>
+        <p>Evaluate AI-generated code instead of relying on it blindly.</p>
+      </div>
+      <div class="card">
+        <h3>Practical Application</h3>
+        <p>Create and improve a simple website that can be shared and discussed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Seminar Agenda</h2>
+    <div class="agenda-item">
+      <strong>1. First Attempt with AI</strong>
+      <p>Participants ask AI to create a website with minimal guidance and review the results.</p>
+    </div>
+    <div class="agenda-item">
+      <strong>2. Web Development Basics</strong>
+      <p>We break down HTML, CSS, and JavaScript to understand what each part of the website does.</p>
+    </div>
+    <div class="agenda-item">
+      <strong>3. Prompt Refinement</strong>
+      <p>Participants improve their original prompts using clearer goals, features, and constraints.</p>
+    </div>
+    <div class="agenda-item">
+      <strong>4. Final Comparison</strong>
+      <p>We compare the original and revised websites to see how better prompting improves results.</p>
+    </div>
+
+    <div class="button-row">
+      <button class="secondary-button" onclick="toggleDetails()">Show Example Outcome</button>
+    </div>
+
+    <div class="details-box" id="detailsBox">
+      <p>
+        By the end of the seminar, participants should be able to explain the structure
+        of a simple webpage, identify weaknesses in vague AI output, and rewrite prompts
+        that produce more useful, intentional results.
+      </p>
+    </div>
+  </section>
+
+  <section id="register">
+    <h2>Why This Matters</h2>
+    <p class="section-intro">
+      AI can generate code quickly, but it cannot replace clear thinking. This seminar
+      helps students understand how to work with AI as a tool—rather than treat it as a substitute
+      for understanding how websites actually function.
+    </p>
+
+    <div class="card">
+      <h3>Ideal Audience</h3>
+      <ul>
+        <li>Business and marketing students</li>
+        <li>Communications and journalism students</li>
+        <li>Design and media creators</li>
+        <li>Anyone curious about web development and AI</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Call to Action:</strong> Join the seminar and build your first AI-assisted webpage with purpose.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Web Development in the AI Era Seminar</p>
+  </footer>
+
+  <script>
+    function toggleDetails() {
+      const detailsBox = document.getElementById("detailsBox");
+
+      if (detailsBox.style.display === "block") {
+        detailsBox.style.display = "none";
+      } else {
+        detailsBox.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
